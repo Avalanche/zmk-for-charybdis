@@ -11,11 +11,11 @@
 };
 
      // Настройка процессора скролла
-        &zip_xy_to_scroll_mapper {
+        &ib_zip_xy_to_scroll_mapper {
             status = "okay";
         };
         
-        &zip_scroll_scaler {
+        &ib_zip_scroll_scaler {
             status = "okay";
             multiplier = <1>;
             divider = <4>; // Чем больше делитель, тем медленнее и точнее скролл
@@ -93,5 +93,5 @@
         status = "okay";
         // Если активен слой 2, включаем маппинг в скролл
         layers = <3>; 
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler>;
+        input-processors = <&ib_zip_xy_to_scroll_mapper>, <&ib_zip_scroll_scaler>;
 };
