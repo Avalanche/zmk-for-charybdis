@@ -10,24 +10,8 @@
     quick-tap-ms = <150>;
 };
 
-     // Настройка процессора скролла
-        &ib_zip_xy_to_scroll_mapper {
-            status = "okay";
-        };
-        
-        &ib_zip_scroll_scaler {
-            status = "okay";
-            multiplier = <1>;
-            divider = <4>; // Чем больше делитель, тем медленнее и точнее скролл
-        };
-
 / {
     combos { compatible = "zmk,combos"; };
-
-    behaviors {
-       
-    };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -87,11 +71,4 @@
             >;
         };
     }; 
-};
-
-&trackball_peripheral_listener {
-        status = "okay";
-        // Если активен слой 2, включаем маппинг в скролл
-        layers = <3>; 
-        input-processors = <&ib_zip_xy_to_scroll_mapper>, <&ib_zip_scroll_scaler>;
 };
