@@ -10,11 +10,7 @@
     quick-tap-ms = <150>;
 };
 
-/ {
-    combos { compatible = "zmk,combos"; };
-
-    behaviors {
-            // Настройка процессора скролла
+     // Настройка процессора скролла
         &zip_xy_to_scroll_mapper {
             status = "okay";
         };
@@ -24,7 +20,13 @@
             multiplier = <1>;
             divider = <4>; // Чем больше делитель, тем медленнее и точнее скролл
         };
-    }
+
+/ {
+    combos { compatible = "zmk,combos"; };
+
+    behaviors {
+       
+    };
 
 
     keymap {
