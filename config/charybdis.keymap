@@ -18,23 +18,23 @@
 
         Base {
             bindings = <
-&gresc          &kp N1   &kp N2  &kp N3        &kp N4        &kp N5          &kp N6       &kp N7         &kp N8     &kp N9   &kp N0       &kp BACKSLASH
-&kp TAB         &kp Q    &kp W   &kp E         &kp R         &kp T           &kp Y        &kp U          &kp I      &kp O    &kp P        &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A    &kp S   &kp D         &kp F         &kp G           &kp H        &kp J          &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LCTRL       &lt 3 Z  &kp X   &kp C         &kp V         &kp B           &kp N        &kp M          &kp COMMA  &kp DOT  &lt 3 SLASH  &kp GRAVE
-                                 &kp LEFT_WIN  &kp SPACE     &lt 1 ENTER     &lt 2 ENTER  &kp RIGHT_ALT
-                                               &kp LEFT_ALT  &kp CAPSLOCK    &kp DELETE
+&gresc          &kp N1   &kp N2  &kp N3        &kp N4        &kp N5           &kp N6       &kp N7         &kp N8     &kp N9   &kp N0       &kp BACKSLASH
+&kp TAB         &kp Q    &kp W   &kp E         &kp R         &kp T            &kp Y        &kp U          &kp I      &kp O    &kp P        &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A    &kp S   &kp D         &kp F         &kp G            &kp H        &kp J          &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LCTRL       &lt 3 Z  &kp X   &kp C         &kp V         &kp B            &kp N        &kp M          &kp COMMA  &kp DOT  &lt 3 SLASH  &kp GRAVE
+                                 &kp LEFT_WIN  &kp SPACE     &lt 1 ENTER      &lt 2 ENTER  &kp RIGHT_ALT
+                                               &kp LEFT_ALT  &kp BACKSPACE    &kp DELETE
             >;
         };
 
         layer_1 {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT       &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT          &kp RBKT         &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
-&kp LSHFT  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LCTRL  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none             &kp BACKSPACE    &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                          &kp LEFT_WIN  &kp SPACE     &trans            &kp ENTER        &kp RIGHT_ALT
-                                                        &none         &none             &none
+&kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT             &kp CARET              &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT                &kp RBKT               &kp F1         &kp F2        &kp F3                &kp F4                 &kp BACKSPACE
+&kp LSHFT  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
+&kp LCTRL  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
+                                          &kp LEFT_WIN  &kp SPACE     &trans                  &kp ENTER              &kp RIGHT_ALT
+                                                        &none         &none                   &none
             >;
         };
 
@@ -45,7 +45,7 @@
 &kp LSHFT      &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &kp UNDER       &kp EQUAL     &kp HOME       &kp UP    &kp END    &kp PAGE_UP    &none
 &kp LCTRL      &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS       &kp PLUS      &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
                                        &kp LEFT_WIN   &kp SPACE      &kp ENTER       &trans        &kp RIGHT_ALT
-                                                      &none          &none           &none
+                                                      &none          &kp CAPSLOCK    &none
             >;
         };
 
@@ -70,5 +70,5 @@
                                                        &none      &none         &none
             >;
         };
-    }; 
+    };
 };
